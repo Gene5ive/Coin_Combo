@@ -35,5 +35,4 @@ class Fixnum
 
   output = "quarters x #{quarters}, dimes x #{dimes}, nickels x #{nickels}, pennies x #{pennies}"
   end
-
 end

@@ -3,15 +3,15 @@ require('coin_combinations')
 require('pry')
 
 describe('sorting coins path')do
-  it('gives you minimum amount of pennies required from the user input') do
+  it('returns minimum number of pennies required to change user input') do
     expect((2).coin_combos()).to(eq("quarters x 0, dimes x 0, nickels x 0, pennies x 2"))
   end
 
-  it('gives you minimum amount of pennies and nickels from the user input') do
+  it('returns minimum amount of pennies and nickels required to change user input') do
     expect((7).coin_combos()).to(eq("quarters x 0, dimes x 0, nickels x 1, pennies x 2"))
   end
 
-  it('gives you minimum amount of pennies and nickels from the user input') do
+  it('returns minimum amount of pennies, nickels, and dimes required to change user input') do
     expect((24).coin_combos()).to(eq("quarters x 0, dimes x 2, nickels x 0, pennies x 4"))
   end
 

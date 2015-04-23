@@ -8,6 +8,7 @@ get('/') do
 end
 
 get('/change') do
-  @change = params.fetch('change').coin_combos()
+  @change = params.fetch('change').to_i
+  @change = @change.coin_combos()
   erb(:change)
 end
