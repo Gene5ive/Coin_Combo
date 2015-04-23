@@ -9,25 +9,31 @@ class Fixnum
   nickels = 0
   pennies = 0
 
-  q = 25
-  d = 10
-  n = 5
-  pen = 1
-
   while input >= 25
     quarters += 1
-    input -= q
+    input -= 25
+    input
+  end
+
+  while input >= 10
+    dimes += 1
+    input -= 10
+    input
+  end
+
+  while input >= 5
+    nickels += 1
+    input -= 5
     input
   end
 
   while input >= 1
     pennies += 1
-    input -= pen
+    input -= 1
     input
   end
 
-
-  output = "quarters x #{quarters}, pennies x #{pennies}"
+  output = "quarters x #{quarters}, dimes x #{dimes}, nickels x #{nickels}, pennies x #{pennies}"
   end
 
 end
