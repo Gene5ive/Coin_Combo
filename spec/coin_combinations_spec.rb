@@ -15,12 +15,7 @@ describe('sorting coins path')do
     expect((24).coin_combos()).to(eq("quarters x 0, dimes x 2, nickels x 0, pennies x 4"))
   end
 
-  it('tells you your change') do
+  it('returns minimum amount of pennies, nickels, dimes, and quarters required to change user input') do
     expect((78).coin_combos()).to(eq("quarters x 3, dimes x 0, nickels x 0, pennies x 3"))
   end
-
-  it('tells you your change') do
-    expect((487).coin_combos()).to(eq("quarters x 19, dimes x 1, nickels x 0, pennies x 2"))
-  end
-
 end
